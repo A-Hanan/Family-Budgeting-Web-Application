@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;500;600&display=swap");
+body {
+  font-family: Inter !important;
+}
+
+:root {
+  --color-one: #233044;
+  --color-two: #376fd0;
+  --color-three: #eeeeee;
+  --color-four: #1e2a38;
+  --color-five: #f7f9fc;
+  --color-six: rgb(76, 175, 80);
+  --color-seven: rgb(244, 67, 54);
+  --color-eight: rgba(244, 67, 54, 0.1);
+  --color-nine: rgba(76, 175, 80, 0.1);
+}

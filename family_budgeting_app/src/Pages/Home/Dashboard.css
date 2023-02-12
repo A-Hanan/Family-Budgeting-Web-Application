@@ -1,0 +1,192 @@
+/*** common classes***/
+.common__heading__h1 {
+  color: var(--color-four);
+  font-size: 1.4rem;
+}
+.common__submission__btn {
+}
+.common__text__input {
+}
+.common__input__label {
+}
+.flex__space__between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.error__para {
+  color: red;
+}
+
+/***/
+
+.dashboard__page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.dashboard__page .sidebar__container {
+  flex: 0.2;
+  border-right: 1px solid black;
+  height: 100%;
+  overflow-y: auto;
+}
+.dashboard__page .main__container {
+  flex: 1;
+
+  height: 100%;
+  overflow-y: auto;
+}
+
+/*** sidebar ***/
+.sidebar__container {
+  padding: 10px 20px;
+  background-color: var(--color-one);
+}
+.sidebar__container > .logo__container {
+  /* border: 1px solid lightgray; */
+}
+.sidebar__container > .logo__container > h1 {
+  font-size: 1.4rem;
+  color: var(--color-two);
+}
+.sidebar__container > .logo__container > h1 > span {
+  font-size: 0.7rem;
+  color: #fff;
+}
+.sidebar__container .menu__container {
+  margin-top: 20px;
+}
+.sidebar__container .menu__heading p {
+  color: var(--color-three);
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+  border-bottom: 1px solid lightgray;
+}
+
+.sidebar__container .menu__item {
+  padding: 6px 0;
+  color: var(--color-three);
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+.sidebar__container .menu__item.active {
+  color: var(--color-two);
+  background-color: var(--color-four);
+  font-weight: 500;
+  padding-left: 10px;
+}
+.sidebar__container .menu__item.dashboard {
+  margin-top: 50px;
+}
+.sidebar__container .menu__item:hover {
+  cursor: pointer;
+  background-color: var(--color-four);
+  padding-left: 4px;
+}
+.sidebar__container .menu__item p {
+  font-size: 0.9rem;
+}
+
+.sidebar__container .user__container {
+  margin-top: 20px;
+}
+.sidebar__container .user__container .user__box {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.sidebar__container .user__container .user__box .MuiAvatar-root {
+  width: 30px;
+  height: 30px;
+}
+.sidebar__container .user__container .user__box p {
+  color: #fff;
+}
+
+/********* main contaier *************/
+
+.main__container {
+  background-color: var(--color-five);
+}
+.main__container .main__container__upper__bar {
+  width: 100%;
+  background-color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+  gap: 10px;
+}
+.main__container .wrapper {
+  padding: 20px;
+}
+
+/* 1. Add Expenditure component ***/
+.main__container .add__expenditure__component {
+  /* border: 1px solid black; */
+  padding: 30px;
+  padding-top: 20px;
+}
+.main__container .add__expenditure__component .form {
+  background-color: #fff;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 4px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 760px) {
+  .main__container .add__expenditure__component .form {
+    width: 90%;
+  }
+}
+
+/*** monthly transactional components**/
+.main__container .monthly__transaction__component {
+  padding: 20px;
+}
+
+/******** main dashboard screen componenets****/
+.main__container .dashboard__screen__components {
+  padding: 20px;
+}
+.main__container .dashboard__screen__components .header__row {
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+}
+.main__container .dashboard__screen__components .dashboard__analytics__wrapper {
+  /* border: 1px solid lightgray; */
+  min-height: 100px;
+  padding: 20px 0;
+}
+
+.main__container .dashboard__analytics__wrapper .first__anlytics__row__box {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: rgb(50 50 93 / 2%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 5%) 0px 1px 3px -1px;
+  min-height: 140px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.green__span {
+  color: var(--color-six);
+  background-color: var(--color-nine);
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+.red__span {
+  color: var(--color-seven);
+  background-color: var(--color-eight);
+  padding: 3px 10px;
+  border-radius: 6px;
+}
